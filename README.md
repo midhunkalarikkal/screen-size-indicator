@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# 📱 Screen Size Indicator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and customizable React component to display the current screen size on your webpage. Ideal for quick responsive design testing during development! 🛠️
 
-Currently, two official plugins are available:
+## ⚙️ Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install the package using npm or yarn:
 
-## Expanding the ESLint configuration
+```bash
+npm install screen-size-indicator
+# or
+yarn add screen-size-indicator
+🚀 UsageImport the ScreenSizeIndicator component into your React application:import ScreenSizeIndicator from 'screen-size-indicator';
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Usage
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+import ScreenSizeIndicator from 'screen-size-indicator';
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+function App() {
+  return (
+    <div>
+      <ScreenSizeIndicator
+        position="top-right"
+        bgColor="bg-black"
+        textColor="text-green-300"
+        textSize="text-2xl"
+      />
+      {/* Your other components */}
+    </div>
+  );
+}
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+export default App;
+
+## ✨ Props
+
+position: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'
+Set the position of the indicator on the screen.
+
+bgColor: string (Optional)
+Background color of the indicator. Default: bg-green-500.
+
+textColor: string (Optional)
+Text color of the indicator. Default: text-white.
+
+textSize: string (Optional)
+Font size of the text. Default: text-md.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
