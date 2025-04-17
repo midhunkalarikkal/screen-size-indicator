@@ -6,7 +6,6 @@ const ScreenSizeIndicator: React.FC<ScreenSizeIndicatorProps> = ({
   bgColor = 'bg-green-500',
   textColor = 'text-white',
   textSize = "text-md",
-  
 }) => {
   const [screenSize, setScreenSize] = useState<string>('');
 
@@ -36,8 +35,7 @@ const ScreenSizeIndicator: React.FC<ScreenSizeIndicatorProps> = ({
   }, []);
 
   return (
-    <div
-      className={`fixed ${position} ${bgColor} ${textColor} ${textSize} opacity-40 p-2 rounded z-50`} >
+    <div className={`fixed ${position} ${bgColor} ${textColor} ${textSize} opacity-40 p-2 rounded z-50`} >
       Screen Size : {screenSize}
     </div>
   );
