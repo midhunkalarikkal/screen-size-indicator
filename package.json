@@ -5,6 +5,12 @@
   "type": "module",
   "description": "A React component that shows the current screen size with customizable positioning.",
   "keywords": ["react", "screen size", "indicator", "responsive", "UI"],
+  "exports": {
+    ".": {
+      "require": "./dist/screen-size-indicator.umd.js",
+      "import": "./dist/screen-size-indicator.es.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
