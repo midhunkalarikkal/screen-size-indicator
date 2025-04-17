@@ -11,9 +11,10 @@ npm install screen-size-indicator
 # or
 yarn add screen-size-indicator
 🚀 UsageImport the ScreenSizeIndicator component into your React application:import ScreenSizeIndicator from 'screen-size-indicator';
+```
 
-
-## 🚀 Usage
+# 🚀 Usage
+```bash
 
 import ScreenSizeIndicator from 'screen-size-indicator';
 
@@ -32,6 +33,8 @@ function App() {
 }
 
 export default App;
+
+```
 
 ## ✨ Props
 
