@@ -4,18 +4,13 @@ A simple and customizable React component to display the current screen size on 
 
 ## ⚙️ Installation
 
-Install the package using npm or yarn:
-
 ```bash
 npm install screen-size-indicator
-# or
-yarn add screen-size-indicator
-🚀 UsageImport the ScreenSizeIndicator component into your React application:import ScreenSizeIndicator from 'screen-size-indicator';
 ```
 
-# 🚀 Usage
-```bash
+## 🚀 Usage
 
+```bash
 import ScreenSizeIndicator from 'screen-size-indicator';
 
 function App() {
@@ -50,6 +45,5 @@ Text color of the indicator. Default: text-white.
 textSize: string (Optional)
 Font size of the text. Default: text-md.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License  📜
+MIT License.

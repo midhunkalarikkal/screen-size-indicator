@@ -1,19 +1,25 @@
 {
   "name": "screen-size-indicator",
+  "version": "1.0.1",
   "private": false,
-  "version": "0.0.1",
-  "type": "module",
   "description": "A React component that shows the current screen size with customizable positioning.",
   "keywords": ["react", "screen size", "indicator", "responsive", "UI"],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "import": "./dist/screen-size-indicator.es.js",
       "require": "./dist/screen-size-indicator.umd.js",
-      "import": "./dist/screen-size-indicator.es.js"
+      "types": "./dist/index.d.ts"
+    },
+    "./types": {
+      "import": "./dist/index.d.ts"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -37,14 +43,12 @@
     "typescript-eslint": "^8.26.1",
     "vite": "^6.3.1"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
+  "license": "MIT",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/midhunkalarikkal/screen-size-indicator"
-}
-
+    "type": "git",
+    "url": "https://github.com/midhunkalarikkal/screen-size-indicator"
+  }
 }
