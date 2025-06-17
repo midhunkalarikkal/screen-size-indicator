@@ -47,3 +47,6 @@ Font size of the text. Default: text-md.
 
 ## License  📜
 MIT License.
+
+## Downloads
+![npm](https://img.shields.io/npm/dt/screen-size-indicator)
